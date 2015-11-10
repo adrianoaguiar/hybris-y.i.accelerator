@@ -5,9 +5,9 @@
   This image is based on the hybrisserver image and should generally just add
   hybrisServer-*.zip which have been generated via ANT PRODUCTION.
 
-  build as: make build
+  build as: make
 
-  run first node:
+  run the first node:
    docker run \
     -d \
     -e y_tomcat_http_port=8080 -e y_tomcat_ssl_port=8443 \
@@ -26,7 +26,7 @@
     --name y.s.acc_1 \
     mateusprado/y.i.accelerator:store
 
-  run second node:
+  run the second node:
    docker run \
     -d \
     -e y_tomcat_http_port=8080 -e y_tomcat_ssl_port=8443 \
